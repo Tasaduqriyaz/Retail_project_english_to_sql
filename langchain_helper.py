@@ -13,8 +13,8 @@ import os
 def chain():
     llm=OpenAI(openai_api_key=os.environ['OPENAI_API_KEY'],temperature=0.2,model="gpt-3.5-turbo-instruct")
     db_user='root'
-    db_password='Haziqbgsbu%40123' # here @ is encoded as %40
-    db_host='127.0.0.1'
+     db_password=####### here @ is encoded as %40
+    db_host=#######
     db_name='atliq_tshirts'
     db=SQLDatabase.from_uri(f"mysql+pymysql://{db_user}:{db_password}@{db_host}/{db_name}",sample_rows_in_table_info=3)
     db.table_info
